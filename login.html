@@ -1,38 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>eMercado - Todo lo que busques está aquí</title>
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>eMercado - Todo lo que busques está aquí</title>
-  
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: rgb(248, 249, 250);
-    }
-  </style>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+    <script src="js/login.js"></script>
+  </head>
 
-<body>
-  <main class="mt-5">
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+  <body>
+    <main class="mt-5">
+      <div class="container">
+        <div class="text-center">
+          <form id="formulario">
+            <img id="loginImg" src="img/login.png" />
+
+            <h3>Iniciar sesión</h3>
+
+            <div id="email" class="form_info">
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Usuario o email"
+                  required
+                />
+              </label>
+            </div>
+
+            <div id="password" class="form_info">
+              <label for="password">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Contraseña"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="checkbox-wrapper-37">
+              <input id="recordarme" name="checkbox" type="checkbox" />
+              <label class="terms-label" for="recordarme">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 200 200"
+                  class="checkbox-svg"
+                >
+                  <mask fill="white" id="path-1-inside-1_476_5-37">
+                    <rect height="200" width="200"></rect>
+                  </mask>
+                  <rect
+                    mask="url(#path-1-inside-1_476_5-37)"
+                    stroke-width="40"
+                    class="checkbox-box"
+                    height="200"
+                    width="200"
+                  ></rect>
+                  <path
+                    stroke-width="15"
+                    d="M52 111.018L76.9867 136L149 64"
+                    class="checkbox-tick"
+                  ></path>
+                </svg>
+                <span class="label-text">Recordarme</span>
+              </label>
+            </div>
+
+            <button class="cta" id="iniciar_sesion">
+              <span>Iniciar sesión</span>
+              <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
-  </main>
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-end">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
-    </div>
-  </footer>
-  <script src="js/login.js"></script>
-</body>
-
+    </main>
+    <footer class="text-muted">
+      <div class="footer">
+        <p class="float-end">
+          <a href="#">Volver arriba</a>
+        </p>
+        <p>
+          Este sitio forma parte de
+          <a href="https://jovenesaprogramar.edu.uy/" target="_blank"
+            >Jovenes a Programar</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
